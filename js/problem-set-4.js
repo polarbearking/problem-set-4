@@ -148,7 +148,12 @@ function fluidOunces() {
   /////////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 7 CODE HERE
-
+  let gallons =Math.floor(fluidOunces/128);
+  let quarts =Math.floor((fluidOunces - (gallons*128))/32);
+  let pints =Math.floor((fluidOunces - (gallons*128) - (quarts*32))/16);
+  let cups =Math.floor((fluidOunces - (gallons*128) - (quarts*32) - (pints*16))/8);
+  fluidOunces =Math.floor(fluidOunces - (gallons*128) - (quarts*32) - (pints*16) - (cups*8));
+  document.getElementById("output7").innerHTML= "Gallons: " + gallons + "<br/>Quarts: " + quarts + "<br/>Pints: " + pints + "<br/>Cups: " + cups + "<br/>Fluid Ounces: " + fluidOunces;
   /////////////////////////////// DO NOT MODIFY
   check("fluidOunces", input); // DO NOT MODIFY
   /////////////////////////////// DO NOT MODIFY
@@ -172,7 +177,10 @@ function ounces() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 8 CODE HERE
-
+  let tons =Math.floor(ounces/32000);
+  let pounds =Math.floor((ounces - (tons*32000))/16);
+  ounces =Math.floor(ounces - (tons*32000) - (pounds*16));
+  document.getElementById("output8").innerHTML= "Tons: " + tons + "<br/>Pounds: " + pounds + "<br/>Ounces: " + ounces;
   ////////////////////////// DO NOT MODIFY
   check("ounces", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY

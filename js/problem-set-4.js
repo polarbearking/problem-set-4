@@ -26,7 +26,8 @@ function helloAgain() {
   // do not need to re-declare it, only assign it a value.
 
   // WRITE YOUR EXERCISE 2 CODE HERE
-
+  name = prompt("Enter Name Here");
+  document.getElementById("output2").innerHTML= "Hello, " + name + "!"
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY

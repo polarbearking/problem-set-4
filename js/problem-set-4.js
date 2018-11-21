@@ -27,7 +27,7 @@ function helloAgain() {
 
   // WRITE YOUR EXERCISE 2 CODE HERE
   name = prompt("Enter Name Here");
-  document.getElementById("output2").innerHTML= "Hello, " + name + "!"
+  document.getElementById("output2").innerHTML= "Hello, " + name + "!";
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY
@@ -47,7 +47,8 @@ function celsius() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 3 CODE HERE
-
+  let fahrenheit = ((cels*9/5) + 32).toFixed(2);
+  document.getElementById("output3").innerHTML= cels + " degrees Celsius equals " + fahrenheit + " degrees Fahrenheit.";
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY
@@ -67,7 +68,8 @@ function fahrenheit() {
   // (inclusive), and rounds this value to 2 decimal places.
 
   // WRITE YOUR EXERCISE 4 CODE HERE
-
+  let celsius = ((fahr - 32) * 5/9).toFixed(2);
+  document.getElementById("output4").innerHTML= fahr + " degrees Fahrenheit equals " + celsius + " degrees Celsius."
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY

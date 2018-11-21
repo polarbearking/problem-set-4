@@ -233,7 +233,17 @@ function change() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 10 CODE HERE
-
+  amount= (amount*100)
+  let quarters =Math.floor(amount/25);
+  let dimes =Math.floor((amount - (quarters*25))/10);
+  let nickels =Math.floor((amount - (quarters*25) - (dimes*10))/5);
+  let pennies =Math.floor(amount - (quarters*25) - (dimes*10) - (nickels*5));
+  let totalCoins = quarters+dimes+nickels+pennies
+  if (totalCoins==1){
+  document.getElementById("output10").innerHTML= totalCoins + " coin."
+} else {
+  document.getElementById("output10").innerHTML= totalCoins + " coins."
+}
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
   ////////////////////////// DO NOT MODIFY

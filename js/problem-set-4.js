@@ -204,7 +204,12 @@ function money() {
   /////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 9 CODE HERE
-
+  let dollars =Math.floor(pennies/100);
+  let quarters =Math.floor((pennies - (dollars*100))/25);
+  let dimes =Math.floor((pennies - (dollars*100) - (quarters*25))/10);
+  let nickels =Math.floor((pennies - (dollars*100) - (quarters*25) - (dimes*10))/5);
+  pennies =Math.floor(pennies - (dollars*100) - (quarters*25) - (dimes*10) - (nickels*5));
+  document.getElementById("output9").innerHTML= "Dollars: " + dollars + "<br/>Quarters: " + quarters + "<br/>Dimes: " + dimes + "<br/>Nickels: " + nickels + "<br/>Pennies: " + pennies;
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
   ///////////////////////// DO NOT MODIFY
